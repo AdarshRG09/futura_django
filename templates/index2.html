@@ -188,7 +188,7 @@
             </ul>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">SUBMIT</a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
                   <h6 class="p-3 mb-0">Projects</h6>
                   <div class="dropdown-divider"></div>
@@ -662,7 +662,9 @@
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
+                    {%block content%}
                     <h4 class="card-title">WELCOME</h4>
+                    {% endblock %}
 <!--                    <div class="table-responsive">-->
 <!--                      <table class="table">-->
 <!--                        <thead>-->
