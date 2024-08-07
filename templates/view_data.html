@@ -13,6 +13,9 @@
       <th scope="col">email</th>
       <th scope="col">due_date</th>
       <th scope="col">fund_allocated</th>
+        <th scope="col">DELETE</th>
+        <th scope="col">UPDATE</th>
+
     </tr>
   </thead>
   <tbody>
@@ -24,7 +27,15 @@
       <td>{{i.email}}</td>
       <td>{{i.due_date}}</td>
       <td>{{i.fund_allocated}}</td>
-
+      <td>
+<form action="{% url 'del' i.id %}" method="POST">
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-danger">DELETE</button>
+</form>
+      </td>
+    <td>
+        <a href="{% url 'upd' i.id %}" type="button" class="btn btn-success">update</a>
+    </td>
     </tr>
 
 

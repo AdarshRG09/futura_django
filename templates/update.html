@@ -1,0 +1,14 @@
+{% extends 'index2.html' %}
+
+
+
+
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-success">UPDATED</button>
+</form>
+{% endblock %}
