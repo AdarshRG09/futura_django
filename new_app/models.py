@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Construction(models.Model):
+    objects = None
     construction_category = (
         ('house', 'house'),
         ('villa', 'villa'),

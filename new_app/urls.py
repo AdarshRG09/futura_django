@@ -6,5 +6,7 @@ urlpatterns = [
     path('',views.site,name="site"),
     path('index',views.home,name="site"),
     path('dashbord',views.dashbord,name="site"),
-    path('forms',views.formConstruct,name='forms')
+    path('forms',views.formConstruct,name='forms'),
+    path('data',views.construct_view, name='data')
+
 ]

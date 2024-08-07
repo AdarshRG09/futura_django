@@ -1,0 +1,33 @@
+{% extends 'index2.html' %}
+
+
+
+
+{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SI.no</th>
+      <th scope="col">engineer_name</th>
+      <th scope="col">work_type</th>
+      <th scope="col">email</th>
+      <th scope="col">due_date</th>
+      <th scope="col">fund_allocated</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in data %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{i.engineer_name}}</td>
+      <td>{{i.work_type}}</td>
+      <td>{{i.email}}</td>
+      <td>{{i.due_date}}</td>
+      <td>{{i.fund_allocated}}</td>
+
+    </tr>
+
+
+{% endfor %}
+</table>
+{% endblock %}
